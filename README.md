@@ -27,7 +27,7 @@
         </td>
         <td style="margin-left: 200px;">
            <a href="https://pvlchupryna.github.io/Portfolio/" title="Go to demo" target="_blank" rel="noopener noreferrer">
-                <img  width="150" src="./assest/portfolio-prev.png" alt="demo">
+                <img  width="150" src="./docs/img/portfolio-prev.png" alt="demo">
            </a>
         </td>
     </tr>

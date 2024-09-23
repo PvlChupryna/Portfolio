@@ -1,0 +1,39 @@
+.history {
+}
+.about__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    row-gap: 80px;
+    
+    @media (max-width: 850px) {
+        row-gap: 35px;
+    }
+    @media (max-width: 790px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 450px) {
+        grid-template-columns: 1fr;
+    }
+}
+.about__grid-year {
+    padding-right: 40px;
+    @media (max-width: 850px) {
+        padding-right: 30px;
+    }
+}
+.about__grid-number {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 170%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+
+    @media (max-width: 850px) {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+}
+.about__grid-year-description {
+    line-height: 170%;
+}

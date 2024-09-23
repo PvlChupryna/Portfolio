@@ -1,0 +1,34 @@
+.contact-me {
+    position: relative;
+}
+.container {
+} 
+.container__contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section__title--contact {
+    display: block;
+    max-width: 660px;
+    text-align: center;
+    text-wrap: wrap;
+    z-index: 2;
+}
+.contact-me__btn {
+    //cursor: pointer;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background-color: #1378EF;
+    //margin-top: -110px;
+    margin-top: -199px;
+    //z-index: -1;
+    
+    
+    @include hover {
+        transform: scale(1.1);
+    }
+}
+

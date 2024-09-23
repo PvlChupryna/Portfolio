@@ -1,0 +1,50 @@
+<div class="form-sample ">
+    <form action="#" id="form" class="form__body">
+        <p class="form__title ">Form Title</p>
+        <div class="form__item ">
+            <label class="form__label " for="name">Name*</label>
+            <input class="form__input  _req" id="name" name="name" type="text">
+        </div>
+        <div class="form__item ">
+            <label class="form__label " for="email">Email*</label>
+            <input class="form__input  _req _email" id="email" name="email" type="email">
+        </div>
+        <div class="form__item ">
+            <p class="form__lable ">RadioButtons</p>
+            <div class="options ">
+                <div class="options__item ">
+                    <label class="options__label ">
+                        <p>radio1</p>
+                        <input class="options__input " checked name="radio" type="radio">
+                    </label>
+                    <label class="options__label ">
+                        <p>radio2</p>
+                        <input class="options__input " name="radio" type="radio">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form__item ">
+            <label class="form__label " for="textarea">TypeMassage:</label>
+            <textarea class="form__input " id="textarea" name="textarea"></textarea>
+        </div>
+        <div class="form__item ">
+            <div class="form__label ">AddPhoto</div>
+            <div class="file ">
+                <div class="file__item ">
+                    <label class=" ">
+                        <div class="btn-file ">choosefile</div>
+                        <input accept=".jpg, .png, .gif" class="file__input visually-hidden  " type="file" name="file">
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form__item ">
+            <div class="checkbox ">
+                <label class="checkbox__lable " for="checkbox"><span>я даю согласие...</span></label>
+                <input class="checkbox__input  _req" checked id="checkbox" type="checkbox" name="checkbox">
+            </div>
+        </div>
+        <button class="form__btn " type="submit">Send</button>
+    </form>
+</div>

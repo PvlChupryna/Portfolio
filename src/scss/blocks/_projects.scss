@@ -1,0 +1,120 @@
+.projects__tabs-box {
+    margin-inline: auto;
+
+}
+.tabs__btns-list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 22px;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-bottom: 35px;
+    color: rgba(255, 255, 255, 0.59);
+
+    @media (max-width: 549px) {
+        flex-direction: column;
+    }
+}
+.btn-indicator {
+    display: none;
+    // background-color: #e90909;
+    // position: absolute;
+    // width: 47px;
+    // height: 4px;
+    // bottom: 0;
+    // left: 46px;
+    // transition: all 1s;
+
+    // z-index: 1;
+}
+.tabs__btn {
+    text-wrap: nowrap;
+    padding: 5px;
+}
+.tabs__content-list {   
+}
+.tabs__content {
+    display: none;
+}
+
+.tabs__content--active {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 200px;
+}
+.tabs__btn--active {
+    color: #fff;
+    @media (max-width: 806px) {
+        transform: scale(1.2);
+        //font-weight: 700;	
+    }
+}
+.tabs__content-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 196%;
+    @media (max-width: 806px) {
+        display: none;
+    }
+
+}
+
+//ACCORDION
+
+.accordion__container {
+    max-width: 860px;
+    width: 100%;
+}
+.accordion :not(:last-child) {
+    //margin-bottom: 19px;
+}
+.accordion__trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //cursor: pointer;
+    
+    // ховер если в спан вставить SVG //
+    // &:hover .trigger-icon svg{
+    //     path {
+    //         fill: red;
+    //     }
+    // }
+}
+.accordion__trigger--active .trigger-icon::before {
+    transform: rotate(90deg);
+}
+.trigger-icon{
+    position: relative;
+    width: 27px;
+    height: 27px;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 27px;
+        height: 27px;
+        background-image: url(../../img/arrow-45-top.svg);
+        transition: transform 0.2s ease-out;
+    }
+}
+.accordion__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 196%;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.trigger-icon {
+}
+.accordion__content {
+    p {
+        margin-bottom: 25px;
+    }
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s;
+}

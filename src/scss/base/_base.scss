@@ -1,0 +1,49 @@
+
+html {
+	scroll-behavior: smooth;
+	//background-color: rgb(39, 39, 39);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	text-wrap: balance;
+}
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: 0.2s;
+}
+
+
+//для липкой шапки
+.header__bg {
+	background-color: #1f1f1fd4;
+	position: fixed;
+	top: 0;
+	transition: top 0.6s ease-in-out;
+	width: 100%;
+	z-index: 100;
+}
+.header__row {
+	transition: padding 0.4s ease-in-out;
+}
+.header__fixed {
+	& .header__row {
+		padding-top: 0;
+	}
+}
+.hidden-header {
+	top: -60px;
+}
+
+
+
+
